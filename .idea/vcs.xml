@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/AndroidArchitectureSample" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/NewsApp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/architecture-samples" vcs="Git" />
-  </component>
-</project>
