@@ -12,12 +12,11 @@ import com.thread_jetpack.ui.theme.Thread_JetPackComposeTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //enableEdgeToEdge()
+        enableEdgeToEdge()
         setContent {
             val navController = rememberNavController()
             Thread_JetPackComposeTheme {
                NavigationGraph(navController)
-
             }
         }
     }

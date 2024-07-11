@@ -7,8 +7,10 @@ import androidx.navigation.compose.composable
 import com.thread_jetpack.screens.AddThreads
 import com.thread_jetpack.screens.BottomNav
 import com.thread_jetpack.screens.Home
+import com.thread_jetpack.screens.Login
 import com.thread_jetpack.screens.Notification
 import com.thread_jetpack.screens.Profile
+import com.thread_jetpack.screens.Register
 import com.thread_jetpack.screens.Search
 import com.thread_jetpack.screens.Splash
 
@@ -43,6 +45,13 @@ fun NavigationGraph(navController: NavHostController) {
 
         composable(Routes.BottomNav.routes){
             BottomNav(navController)
+        }
+
+        composable(Routes.Login.routes){
+            Login(navController)
+        }
+        composable(Routes.Register.routes){
+            Register(navController)
         }
     }
 }
