@@ -24,6 +24,7 @@ import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
@@ -66,7 +67,7 @@ import com.thread_jetpack.viewModel.AuthViewModel
 fun Register(navController: NavHostController) {
     val focusManager = LocalFocusManager.current
     val context = LocalContext.current
-    val authViewModel : AuthViewModel = viewModel()
+    val authViewModel: AuthViewModel = viewModel()
     val firebaseUser by authViewModel.firebaseUser.observeAsState(null)
 
     var email by remember { mutableStateOf("") }
@@ -111,6 +112,15 @@ fun Register(navController: NavHostController) {
                 context.startActivity(intent)
             }
         )
+    }
+
+    LaunchedEffect(firebaseUser) {
+        if (firebaseUser!= null){
+            navController.navigate(Routes.BottomNav.routes) {
+                popUpTo(navController.graph.startDestinationId)
+                launchSingleTop = true
+            }
+        }
     }
 
 
@@ -164,10 +174,10 @@ fun Register(navController: NavHostController) {
 
         Spacer(Modifier.height(10.dp))
         ElevatedButtonUi(REGISTER_NOW, onclick = {
-            if (name.isEmpty() || bio.isEmpty() || email.isEmpty() || password.isEmpty() || imageUri == null){
-                 Toast.makeText(context,"Enter all Details",Toast.LENGTH_SHORT).show()
-            }else{
-                authViewModel.registerUser(email,password,name,bio,userName )
+            if (name.isEmpty() || bio.isEmpty() || email.isEmpty() || password.isEmpty() || imageUri == null) {
+                Toast.makeText(context, "Enter all Details", Toast.LENGTH_SHORT).show()
+            } else {
+                authViewModel.registerUser(email, password, name, bio, userName, imageUri, context)
             }
         })
 

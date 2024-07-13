@@ -13,3 +13,13 @@ object Constants {
     const val ALREADY_REGISTERED ="Already registered? Login here"
     const val NEW_USER_CREATE_ACCOUNT = "New User? Create your Account"
 }
+
+object SharedPrefConstants {
+    const val EMAIL = "email"
+    const val NAME = "name"
+    const val BIO = "bio"
+    const val USER_NAME = "userName"
+    const val IMAGE = "image"
+}
+
+const val SHARED_DATA_KEY = "user"
