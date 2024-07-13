@@ -74,15 +74,23 @@ object UiComponent {
     fun ElevatedButtonUi(
         label: String,
         onclick: () -> Unit,
+        isEnable: Boolean = true,
         fontSize: TextUnit = 20.sp,
         fontWeight: FontWeight = FontWeight.SemiBold,
         modifier: Modifier = Modifier
     ) {
         ElevatedButton(
             onClick = onclick,
+            enabled = isEnable,
             modifier = modifier
                 .height(50.dp)
-                .width(250.dp)
+                .width(250.dp),
+//            colors = ButtonColors(
+//                containerColor = ,
+//                contentColor = contentColor,
+//                disabledContainerColor = disabledContainerColor,
+//                disabledContentColor = disabledContentColor
+//            )
         ) {
             Text(label, style = TextStyle(fontSize = fontSize, fontWeight = fontWeight))
         }

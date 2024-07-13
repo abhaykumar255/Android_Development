@@ -6,6 +6,7 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.provider.Settings
+import android.widget.Toast
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.Image
@@ -24,6 +25,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -41,6 +43,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import coil.compose.rememberAsyncImagePainter
 import com.thread_jetpack.R
@@ -56,12 +59,15 @@ import com.thread_jetpack.component.UiComponent.ElevatedButtonUi
 import com.thread_jetpack.component.UiComponent.OutLineTextFieldBox
 import com.thread_jetpack.component.UiComponent.TextButtonLabel
 import com.thread_jetpack.navigation.Routes
+import com.thread_jetpack.viewModel.AuthViewModel
 
 
 @Composable
 fun Register(navController: NavHostController) {
     val focusManager = LocalFocusManager.current
     val context = LocalContext.current
+    val authViewModel : AuthViewModel = viewModel()
+    val firebaseUser by authViewModel.firebaseUser.observeAsState(null)
 
     var email by remember { mutableStateOf("") }
     var name by remember { mutableStateOf("") }
@@ -158,7 +164,11 @@ fun Register(navController: NavHostController) {
 
         Spacer(Modifier.height(10.dp))
         ElevatedButtonUi(REGISTER_NOW, onclick = {
-
+            if (name.isEmpty() || bio.isEmpty() || email.isEmpty() || password.isEmpty() || imageUri == null){
+                 Toast.makeText(context,"Enter all Details",Toast.LENGTH_SHORT).show()
+            }else{
+                authViewModel.registerUser(email,password,name,bio,userName )
+            }
         })
 
         Spacer(Modifier.height(10.dp))
