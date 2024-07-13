@@ -23,3 +23,4 @@ object SharedPrefConstants {
 }
 
 const val SHARED_DATA_KEY = "user"
+const val ADD_THREADS = "Add Threads"

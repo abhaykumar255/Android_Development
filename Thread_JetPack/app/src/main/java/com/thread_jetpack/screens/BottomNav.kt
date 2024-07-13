@@ -30,7 +30,7 @@ fun BottomNav(navController: NavHostController) {
             modifier = Modifier.padding(innerPaddings)
         ) {
             composable(Routes.AddThreads.routes) {
-                AddThreads()
+                AddThreads(navController1)
             }
 
             composable(Routes.Home.routes) {
