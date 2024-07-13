@@ -75,6 +75,13 @@ dependencies {
     // navigation dependency
     implementation("androidx.navigation:navigation-compose:2.7.7")
 
+    // viewModel dependency
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
+
+    // coil image dependency
+    implementation("io.coil-kt:coil-compose:2.6.0")
+
+
     // constraints layout dependency
     implementation ("androidx.constraintlayout:constraintlayout-compose:1.0.1")
 
