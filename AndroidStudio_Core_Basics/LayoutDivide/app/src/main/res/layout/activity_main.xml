@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearlayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/linearlayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:background="@drawable/my_border"
+                android:gravity="fill_vertical"
+                android:layout_gravity="center"
+                android:text="TextView 1"
+                />
+            <TextView
+                android:id="@+id/textview2"
+                android:background="@drawable/my_border"
+                android:gravity="fill_vertical"
+                android:layout_gravity="center"
+                android:text="TextView 2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/textview3"
+                android:background="@drawable/my_border"
+                android:text="TextView 3"
+                android:gravity="fill_vertical"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/my_border"
+                android:text="TextView 4" />
+
+            <TextView
+                android:id="@+id/textview5"
+                android:background="@drawable/my_border"
+                android:text="TextView 5"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/linearlayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/textview6"
+                android:text="TextView 6"
+                android:background="@drawable/my_border"
+                android:textScaleX="5.3"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/textview7"
+                android:text="TextView 7"
+                android:background="@drawable/my_border"
+                android:textScaleX="5.3"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/textview8"
+                android:text="TextView 8"
+                android:background="@drawable/my_border"
+                android:textScaleX="5.3"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/textview9"
+                android:text="TextView 9"
+                android:textScaleX="5.3"
+                android:background="@drawable/my_border"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/textview10"
+                android:text="TextView 10"
+                android:background="@drawable/my_border"
+                android:textScaleX="5.3"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+</LinearLayout>

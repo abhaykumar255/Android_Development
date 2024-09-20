@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SampleDatabase</string>
+    <string name="please_enter_the_details">Please enter the Details</string>
+    <string name="contact">Contact</string>
+    <string name="insert_data">Insert Data</string>
+    <string name="update_data">update data</string>
+    <string name="delete_data">delete data</string>
+    <string name="view_data">view data</string>
+    <string name="dob">DOB</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+</resources>

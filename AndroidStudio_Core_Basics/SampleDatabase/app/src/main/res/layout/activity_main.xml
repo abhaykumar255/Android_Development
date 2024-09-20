@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/please_enter_the_details"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/personname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texttitle"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personname"
+        android:autofillHints=""
+        android:hint="@string/contact"
+        android:inputType="number"
+        android:textColorHint="#78909C"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact"
+        android:autofillHints=""
+        android:hint="@string/age"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:textSize="24sp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age"
+        android:layout_marginTop="20dp"
+        android:text="@string/insert_data"
+        android:textSize="20sp"
+        android:id="@+id/insertdata"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/insertdata"
+        android:text="@string/update_data"
+        android:textSize="20sp"
+        android:id="@+id/updatedata"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updatedata"
+        android:text="@string/delete_data"
+        android:textSize="20sp"
+        android:id="@+id/deletedata"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deletedata"
+        android:text="@string/view_data"
+        android:textSize="20sp"
+        android:id="@+id/viewdata"
+        />
+
+
+</RelativeLayout>

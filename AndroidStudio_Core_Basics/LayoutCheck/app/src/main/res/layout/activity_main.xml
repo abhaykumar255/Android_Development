@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/layoutFrame">
+
+    <LinearLayout
+        android:id="@+id/smListBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="@color/white"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp">
+
+        <RelativeLayout
+            android:id="@+id/smTitleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:id="@+id/tvVerticalBar"
+                android:layout_width="6dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/sm_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tvVerticalBar"
+                android:lineSpacingMultiplier="1.21"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/sm_subHeading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sm_header"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tvVerticalBar"
+                android:lineSpacingMultiplier="1.20"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/sm_discount_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:alpha=".8"
+
+                android:maxLines="1"
+                android:textColor="@color/red"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/sm_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sm_discount_price"
+                android:layout_marginTop="10sp"
+                android:maxLines="1"
+                android:textColor="@color/red"
+                android:textSize="45dp" />
+
+            <TextView
+                android:id="@+id/sm_subHeading2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sm_price"
+                android:textColor="@color/grey"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/sm_tnc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="30dp"
+                android:textColor="@color/grey"
+                android:textSize="12dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

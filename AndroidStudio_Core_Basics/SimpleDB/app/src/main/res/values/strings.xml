@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SimpleDB</string>
+    <string name="add_name">Add Name</string>
+    <string name="age_n_n">Age\n\n</string>
+    <string name="name_n_n">Name\n\n</string>
+    <string name="print_name">Print NAme</string>
+    <string name="enter_your_age">Enter Your Age</string>
+    <string name="enter_your_name">Enter Your Name</string>
+</resources>

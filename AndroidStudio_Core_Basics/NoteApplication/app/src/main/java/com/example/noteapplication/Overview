@@ -1,0 +1,17 @@
+first we will crete our model class which will we our entity (storing different different type of variables, etc )
+Entity - Note class
+(Table name - notesTable)
+
+After creating model class
+now we wil create a DAO class
+
+Now we have to create our database class i.e. room database
+than we call our DAO class
+and then creating instance for our database
+
+
+Now
+
+
+
+

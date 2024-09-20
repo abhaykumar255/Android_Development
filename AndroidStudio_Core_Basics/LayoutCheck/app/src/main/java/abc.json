@@ -1,0 +1,202 @@
+{ "meta":
+{ "id": "441cd9cf789947ec8a1c50d1fac5aefa",
+  "code": 200,
+  "command": "getDispatchDetails",
+  "macId": "800a80578477",
+  "timestamp": 1681466238943,
+  "message": "success",
+  "ottTimeZone": "",
+  "targetOttTimeZone": "",
+  "base_url": ""
+},
+  "response": {
+    "stats": {
+      "Cancelled": 1,
+      "Completed": 2,
+      "New": 3,
+      "Ready": 3
+    },
+    "tagDetails": [
+      {
+        "id": 2413,
+        "status": "Completed",
+        "driverName": "Arudhra",
+        "notes": "DESC",
+        "dispatchEntryDateTime": 1681386039,
+        "fromLocation": "",
+        "toLocation": "",
+        "tagNo": "ST0003",
+        "tagType": "Label",
+        "customer": "",
+        "vehicleType": "",
+        "roId": [
+          "12345"
+        ],
+        "vehicleMake": "",
+        "vehicleModel": "",
+        "vehicleYear": "",
+        "vin": "VIN0003"
+      },
+      {
+        "id": 2414,
+        "status": "In Route",
+        "driverName": "Abhay",
+        "notes": "DESC",
+        "dispatchEntryDateTime": 1681387039,
+        "fromLocation": "Washway",
+        "toLocation": "Shroom3",
+        "tagNo": "PT4977",
+        "tagType": "Label",
+        "customer": "Pacific gas and electric company",
+        "vehicleType": "Rajput",
+        "roId": [
+          "12345"
+        ],
+        "vehicleMake": "chevrolet",
+        "vehicleModel": "Tahoe",
+        "vehicleYear": "2017",
+        "vin": "1GNSKBKC8HR241695"
+      },
+      {
+        "id": 2415,
+        "status": "New",
+        "driverName": "Abhay",
+        "notes": "DESC",
+        "dispatchEntryDateTime": 1681387109,
+        "fromLocation": "",
+        "toLocation": "",
+        "tagNo": "PT3742",
+        "tagType": "Indore",
+        "customer": "Prakash",
+        "vehicleType": "",
+        "roId": [
+          "12345"
+        ],
+        "vehicleMake": "Kia",
+        "vehicleModel": "Sportage",
+        "vehicleYear": "2014",
+        "vin": "KNDPB3AC9E7522711"
+      },
+      {
+        "id": 2416,
+        "status": "Ready",
+        "driverName": "Arudhra",
+        "notes": "DESC",
+        "dispatchEntryDateTime": 1681387214,
+        "fromLocation": "",
+        "toLocation": "",
+        "tagNo": "DCE302",
+        "tagType": "Super",
+        "customer": "Arudhra Narasimhan V",
+        "vehicleType": "Special",
+        "roId": [
+          "123"
+        ],
+        "vehicleMake": "BMW",
+        "vehicleModel": "CF5",
+        "vehicleYear": "1997",
+        "vin": "260619977888"
+      },
+      {
+        "id": 2417,
+        "status": "Ready",
+        "driverName": "Arudhra",
+        "notes": "DESC",
+        "dispatchEntryDateTime": 1681400124,
+        "fromLocation": "",
+        "toLocation": "",
+        "tagNo": "ST0002",
+        "tagType": "Label",
+        "customer": "",
+        "vehicleType": "",
+        "roId": [
+          "12345"
+        ],
+        "vehicleMake": "",
+        "vehicleModel": "",
+        "vehicleYear": "",
+        "vin": "VIN0002"
+      },
+      {
+        "id": 2418,
+        "status": "Cancelled",
+        "driverName": "Venkat",
+        "notes": "",
+        "dispatchEntryDateTime": 1681400852,
+        "fromLocation": "",
+        "toLocation": "",
+        "tagNo": "PT4977",
+        "tagType": "Indore",
+        "customer": "Pacific gas and electric company",
+        "vehicleType": "",
+        "roId": [
+          "12345"
+        ],
+        "vehicleMake": "chevrolet",
+        "vehicleModel": "Tahoe",
+        "vehicleYear": "2017",
+        "vin": "1GNSKBKC8HR241695"
+      },
+      {
+        "id": 2419,
+        "status": "Completed",
+        "driverName": "Mohan",
+        "notes": "Testing",
+        "dispatchEntryDateTime": 1681402522,
+        "fromLocation": "",
+        "toLocation": "",
+        "tagNo": "Aprl13",
+        "tagType": "Super",
+        "customer": "",
+        "vehicleType": "",
+        "roId": [
+          "12345"
+        ],
+        "vehicleMake": "",
+        "vehicleModel": "",
+        "vehicleYear": "",
+        "vin": "VIN5679"
+      },
+      {
+        "id": 2420,
+        "status": "New",
+        "driverName": "Abhay",
+        "notes": "",
+        "dispatchEntryDateTime": 1681402926,
+        "fromLocation": "",
+        "toLocation": "",
+        "tagNo": "PT9002",
+        "tagType": "Super",
+        "customer": "A",
+        "vehicleType": "",
+        "roId": [
+          "12345"
+        ],
+        "vehicleMake": "Maserati",
+        "vehicleModel": "Quattroporte",
+        "vehicleYear": "2005",
+        "vin": "ZAMCE39A250017512"
+      },
+      {
+        "id": 2421,
+        "status": "New",
+        "driverName": "Abhay",
+        "notes": "asass",
+        "dispatchEntryDateTime": 1681464888,
+        "fromLocation": "",
+        "toLocation": "",
+        "tagNo": "PT3955",
+        "tagType": "Indore",
+        "customer": "Sara",
+        "vehicleType": "",
+        "roId": [
+          "1068455"
+        ],
+        "vehicleMake": "hyundai",
+        "vehicleModel": "IS350",
+        "vehicleYear": "2023",
+        "vin": "JTHFE2C24A2504933"
+      }
+    ]
+  }
+}

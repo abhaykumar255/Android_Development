@@ -1,0 +1,12 @@
+// IMyCalculator.aidl
+package com.example.aidldemo;
+
+// Declare any non-default types here with import statements
+
+interface IMyCalculator {
+    /**
+     * Demonstrates some basic types that you can use as parameters
+     * and return values in AIDL.
+     */
+    int addition(int x, int y);
+}
